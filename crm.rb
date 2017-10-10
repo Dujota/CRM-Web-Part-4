@@ -20,7 +20,11 @@ end
 get '/contacts/:id' do
   # params[:id] contains the id from the URL
   @contact = Contact.find_by({id: params[:id].to_i}) # we are using the id key and passing in the value as that of the dynamic route and looking for that in the database of the id column
-  erb :show_contact
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound # this raises a browser 404 error on any ids that are not found in the database
+  end
 end
 
 # REDIRECTS

@@ -1,9 +1,9 @@
 <h1>Contact # <%= @contact.id %></h1>
 
-<section>
+<section class="show_contact">
   <ul>
-  <li> Name: <%= @contact.full_name %> </li>
-  <li> Email: <%= @contact.email %> </li>
-  <li> Note: <%= @contact.note %> </li>
+  <li class="name"> <span>Name:</span> <%= @contact.full_name %> </li>
+  <li class="email"> <span>Email:</span> <%= @contact.email %> </li>
+  <li class="note"> <span>Note:</span> <%= @contact.note %> </li>
   </ul>
 </section>

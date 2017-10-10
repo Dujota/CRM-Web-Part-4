@@ -123,6 +123,22 @@ main section.contact ul li h5 a:hover{
   color: #ff3300;
 }
 
+/*SHOW CONTACT PAGE STYLING*/
+main section.show_contact ul li{
+  display: inline-block;
+  width: 100%;
+  padding: 0.4em;
+  background-color: #ccFFFF;
+  /*border-bottom: solid #FFFFFF 10px;*/
+  margin: 0 auto;
+}
+
+main section.show_contact ul li span{
+  font-weight: 600;
+  text-decoration: underline;
+  
+}
+
 /*Footer styling*/
 footer{
   background-color: #000000;
