@@ -18,8 +18,11 @@ end
 
 # DYNAMIC ROUTE ::::::::::::::::::::::::
 get '/contacts/:id' do
-  # instructions for how to handle requests to this route will go here
+  # params[:id] contains the id from the URL
+  @contact = Contact.find_by({id: params[:id].to_i}) # we are using the id key and passing in the value as that of the dynamic route and looking for that in the database of the id column
+  erb :show_contact
 end
+
 # REDIRECTS
 # =========================================================================
 get '/' do
