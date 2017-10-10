@@ -104,14 +104,23 @@ main section.contact ul li h4 {
   /*selected the contact informatuion for later use*/
 }
 
+/*styling for link of contact in contacts list*/
 main section ul li h4 a.contact_link{
   color: #000000;
   text-decoration: none;
 }
 
+main section ul li h4 a.contact_link:hover{
+  color: #0000ff;
+}
+
+/*style the edit delete buttons*/
 main section.contact ul li h5 a{
   color: #0000cc;
+}
 
+main section.contact ul li h5 a:hover{
+  color: #ff3300;
 }
 
 /*Footer styling*/
