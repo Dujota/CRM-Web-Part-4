@@ -15,6 +15,11 @@ end
 get '/about' do
   erb :about
 end
+
+# DYNAMIC ROUTE ::::::::::::::::::::::::
+get '/contacts/:id' do
+  # instructions for how to handle requests to this route will go here
+end
 # REDIRECTS
 # =========================================================================
 get '/' do
