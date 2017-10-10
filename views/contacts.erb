@@ -1,0 +1,21 @@
+<h1>Contacts</h1>
+
+<section class="count">
+  There are <span> <%= @contacts.length%> </span> contacts
+</section>
+<!-- List out contact information  -->
+
+<section class="contact">
+  <ul>
+    <% @contacts.each do |contact| %>
+      <li>
+        <h4>
+        <%= " ID: #{contact.id} Name: #{contact.full_name} (#{contact.email})" %>
+      </h4>
+        <h5>
+          <a href="#">Edit</a> | <a href="#">Delete</a>
+        </h5>
+      </li>
+    <% end %>
+  </section>
+</ul>

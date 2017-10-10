@@ -1,0 +1,120 @@
+/*set all to 0 margin, 0 padding with a default font*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Header Styling*/
+header{
+background-color: #000000;
+text-align: center;
+padding: .7em;
+font-size: 1.4em;
+font-weight: 600;
+border-bottom: solid #FFFFFF 4px; /* needed this to add space between home button */
+}
+
+header a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+/*Navigation Bar Styling*/
+nav{
+  text-align: center;
+}
+
+nav a{
+  display: inline-block;
+  width: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #d9d9d9;
+  font-weight: 600;
+}
+
+nav a:hover{
+  background: #f9ecec;
+  color: 000000;
+}
+
+nav ul li {
+  padding: 0.4em;
+  border-bottom: solid 4px #FFFFFF;
+}
+
+li{
+  list-style: none;
+}
+
+/*Styling of ERB files*/
+/*container of the yield*/
+main{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.8em;
+}
+
+/*Heading for each ERB file*/
+main h1{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 0.4em;
+}
+
+/*Contact.erb Styling*/
+
+/* styling for count banner on contact page */
+main section.count{
+  display: inline-block;
+  width: 100%;
+  padding: 0.4em;
+  background-color: #ffbf00;
+  border-bottom: solid #FFFFFF 6px;
+}
+
+main section.count span{
+font-weight: 600;
+border-bottom: solid 2px #ccffff;
+}
+
+/*contact section styling will also do the aside in here as well*/
+
+main section.contact{
+  display: inline-block;
+  width: 100%;
+  /*padding: 0.3em;*/
+}
+
+main section.contact ul li{
+  display: inline-block;
+  width: 100%;
+  padding: 0.4em;
+  background-color: #ccFFFF;
+  border-bottom: solid #FFFFFF 10px;
+  margin: 0 auto;
+}
+
+main section.contact ul li h4{
+  /*selected the contact informatuion for later use*/
+}
+
+main section.contact ul li h5 a{
+  color: #0000cc;
+
+}
+
+/*Footer styling*/
+footer{
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.7em;
+  font-weight: 600;
+}

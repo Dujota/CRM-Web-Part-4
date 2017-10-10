@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="/styles.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <!--  Header-->
+  <header><a href="/">Bitmaker CRM</a></header>
+
+    <!-- NAVBAR  -->
+    <nav>
+      <ul class="nav">
+      <a href="/"><li>Home</li></a>
+      <a href="/contacts"><li>Add a Contact</li></a>
+      <a href="/about"><li>About</li></a>
+    </ul>
+    </nav>
+
+
+    <main>
+      <!-- the site content from other erbs will go here -->
+    <%= yield %>
+    </main>
+
+
+
+    <footer> <p>&copy; Bitmaker 2016</p></footer>
+  </body>
+</html>
