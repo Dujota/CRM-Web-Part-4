@@ -9,9 +9,12 @@
   <ul>
     <% @contacts.each do |contact| %>
       <li>
+
         <h4>
-        <%= " ID: #{contact.id} Name: #{contact.full_name} (#{contact.email})" %>
-      </h4>
+          <a class="contact_link" href="/contacts/<%=contact.id%>"> ID: <%="#{contact.id}"%>
+          Name: <%="#{contact.full_name}"%> </a>
+          <%="(#{contact.email})" %>
+        </h4>
         <h5>
           <a href="#">Edit</a> | <a href="#">Delete</a>
         </h5>

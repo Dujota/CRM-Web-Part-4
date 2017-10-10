@@ -100,8 +100,13 @@ main section.contact ul li{
   margin: 0 auto;
 }
 
-main section.contact ul li h4{
+main section.contact ul li h4 {
   /*selected the contact informatuion for later use*/
+}
+
+main section ul li h4 a.contact_link{
+  color: #000000;
+  text-decoration: none;
 }
 
 main section.contact ul li h5 a{
